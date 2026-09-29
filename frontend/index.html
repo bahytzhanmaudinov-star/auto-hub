@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Auto Hub — каталог автомобилей с поиском, фильтрацией, избранным и отзывами.">
+  <title>Auto Hub — каталог автомобилей</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="#"><span class="logo">AH</span><div><h1>Auto Hub</h1><p>Автомобили без лишних сложностей</p></div></a><nav class="header-buttons"><button id="favoritesBtn" class="ghost">♡ Избранное</button><button id="historyBtn" class="ghost">История</button><button id="loginBtn" class="ghost">Войти</button><button id="registerBtn">Регистрация</button><button id="logoutBtn" class="hidden">Выйти</button></nav></header>
+<main>
+  <section class="hero"><div><span class="eyebrow">AUTO HUB · ALMATY</span><h2>Найдите автомобиль<br><em>под свой ритм жизни</em></h2><p>Удобный каталог с поиском, ценовыми фильтрами, избранным и отзывами.</p><p id="userStatus" class="user-status"></p><a href="#catalog" class="primary-link">Смотреть автомобили ↓</a></div><div class="hero-art"><span>12</span><small>автомобилей<br>в каталоге</small></div></section>
+  <section id="catalog" class="catalog-section"><div class="section-head"><div><span class="eyebrow">КАТАЛОГ</span><h2>Автомобили</h2></div><div><strong id="resultsCount">0 авто</strong><small id="apiStatus">Загрузка каталога…</small></div></div>
+    <div class="filters"><input type="search" id="searchInput" placeholder="Марка или модель"><input type="number" id="minPrice" min="0" placeholder="Цена от, ₸"><input type="number" id="maxPrice" min="0" placeholder="Цена до, ₸"><select id="sortPrice"><option value="">Сортировка</option><option value="asc">Сначала дешевле</option><option value="desc">Сначала дороже</option><option value="year">Сначала новее</option></select><button id="filterBtn">Найти</button><button id="resetBtn" class="secondary">Сбросить</button></div>
+    <div class="cars-container" id="carsContainer"></div>
+  </section>
+  <section class="contact-panel"><div><span class="eyebrow">ЕСТЬ ВОПРОСЫ?</span><h2>Свяжитесь с Auto Hub</h2><p>Отправьте сообщение через удобный мессенджер. В демо-версии откроется окно отправки сообщения.</p></div><div class="contact-buttons"><a id="whatsappLink" class="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp ↗</a><a id="telegramLink" class="telegram" href="#" target="_blank" rel="noopener">Telegram ↗</a></div></section>
+</main>
+<footer><strong>Auto Hub</strong><span>Учебный full-stack проект · <span id="year"></span> · Фото автомобилей: Wikimedia Commons</span></footer>
+<div id="loginModal" class="modal hidden"><div class="modal-content"><button class="close" data-close="loginModal">×</button><h2>Вход</h2><p>Войдите в аккаунт Auto Hub.</p><input id="loginUsername" type="text" autocomplete="username" placeholder="Логин"><input id="loginPassword" type="password" autocomplete="current-password" placeholder="Пароль"><button id="submitLogin">Войти</button><p id="loginMessage" class="message"></p></div></div>
+<div id="registerModal" class="modal hidden"><div class="modal-content"><button class="close" data-close="registerModal">×</button><h2>Регистрация</h2><p>Создайте аккаунт для каталога.</p><input id="registerUsername" type="text" autocomplete="username" placeholder="Логин"><input id="registerPassword" type="password" autocomplete="new-password" placeholder="Пароль"><button id="submitRegister">Зарегистрироваться</button><p id="registerMessage" class="message"></p></div></div>
+<div id="detailsModal" class="modal hidden"><div class="modal-content modal-wide"><button class="close" data-close="detailsModal">×</button><div id="detailsContent"></div></div></div>
+<div id="favoritesModal" class="modal hidden"><div class="modal-content"><button class="close" data-close="favoritesModal">×</button><h2>Избранное</h2><div id="favoritesContent"></div></div></div>
+<div id="historyModal" class="modal hidden"><div class="modal-content"><button class="close" data-close="historyModal">×</button><h2>История просмотров</h2><div id="historyContent"></div></div></div>
+<script src="script.js"></script></body></html>
