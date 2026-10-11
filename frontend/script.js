@@ -446,18 +446,9 @@ document.addEventListener("DOMContentLoaded", () => {
     $("registerBtn").classList.toggle("hidden", !!username);
   }
 
-  function demoContact(event) {
-    event.preventDefault();
 
-    alert(
-      "Демо-функция Auto Hub\n\n" +
-      "Контакт продавца пока не настроен."
-    );
-  }
 
-  $("whatsappLink").addEventListener("click", demoContact);
-  $("telegramLink").addEventListener("click", demoContact);
-
+ 
   $("year").textContent = new Date().getFullYear();
 
   updateUser();
