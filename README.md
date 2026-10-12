@@ -1,42 +1,51 @@
-# 🚗 Auto Hub — Car Catalog
+# 🚗 Auto Hub — Каталог автомобилей
 
-Auto Hub is a full-stack web application for browsing and managing a catalog of cars.
+**Auto Hub** — демонстрационное full-stack веб-приложение для поиска и просмотра автомобилей.
 
-## ✨ Features
+Проект разработан в качестве портфолио и демонстрирует создание пользовательского интерфейса, серверной части и подключение базы данных.
 
-- 🚘 Car catalog with photos
-- 🔍 Price filtering and sorting
-- ❤️ Favorites
-- 🕘 Browsing history
-- ⭐ Reviews and ratings
-- 👤 Registration and login
-- 📱 Responsive interface
-- 🐳 Docker support
-- 💬 Contact seller functionality
+## 🌐 Посмотреть сайт
 
-## 🛠 Technologies
+[Открыть Auto Hub](https://bahytzhanmaudinov-star.github.io/auto-hub/frontend/index.html)
 
-- HTML
-- CSS
-- JavaScript
-- Python
-- Flask
-- PostgreSQL
-- Docker
-- Nginx
+## ✨ Возможности
 
-## 📂 Project Structure
+- Каталог из 12 автомобилей с фотографиями
+- Поиск по марке и модели
+- Фильтрация по стоимости
+- Сортировка автомобилей
+- Подробная информация об автомобилях
+- Регистрация и вход пользователей
+- Избранные автомобили
+- История просмотров
 
-- `frontend/` — website interface
-- `backend/` — Flask API
-- `database/` — database files
-- `docker-compose.yml` — Docker configuration
+## 🛠 Технологии
 
-## 🚀 About the Project
+**Frontend:** HTML, CSS, JavaScript
 
-Auto Hub was created as a full-stack car catalog project.  
-The goal of the project is to demonstrate frontend development, backend development, database integration and Docker containerization.
+**Backend:** Python, Flask
 
-## 👨‍💻 Developer
+**База данных:** PostgreSQL
 
-**Bahytzhan Maudinov**
+**Инфраструктура:** Docker, GitHub Pages, Render
+
+## 📁 Структура проекта
+
+- `frontend/` — интерфейс сайта
+- `backend/` — серверная часть
+- `database/` — файлы базы данных
+- `docker-compose.yml` — конфигурация Docker
+
+## 🎯 Назначение проекта
+
+Auto Hub создан для демонстрации навыков веб-разработки.
+
+Проект не является настоящим автосалоном. Представленные автомобили используются для демонстрации возможностей каталога.
+
+## 👨🏻‍💻 Разработчик
+
+**Бахытжан Маудинов**
+
+Веб-разработка · HTML · CSS · JavaScript · Python
+
+Алматы, Казахстан · 2026
